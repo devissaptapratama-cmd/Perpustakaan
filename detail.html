@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Detail Buku - GROCG Library</title>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-left">
+      <div class="logo">G</div>
+      <span class="site-title">GROCG LIBRARY</span>
+    </div>
+
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link">Beranda</a>
+      <a href="kategori.html" class="nav-link">Kategori</a>
+      <a href="profil.html" class="nav-link">Profil</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="login.html" class="btn-login">Login</a>
+      <button class="btn-menu" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+      <button class="close-btn" id="closeBtn">&times;</button>
+    </div>
+    <a href="index.html">Beranda</a>
+    <a href="kategori.html">Kategori</a>
+    <a href="profil.html">Profil</a>
+    <a href="login.html">Login</a>
+  </nav>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</header>
+
+<main class="container">
+  <div class="book-detail">
+    <div class="book-cover"></div>
+
+    <div class="book-info">
+      <h3>Pemrograman Web Modern dengan JavaScript</h3>
+      
+      <p><strong>Penulis:</strong> Devis Sapta Nugraha</p>
+      <p><strong>Tahun Terbit:</strong> 2011</p>
+      <p><strong>Kategori:</strong> Teknologi & Komputer</p>
+      <p><strong>ISBN:</strong> 978-602-1234-56-7</p>
+      <p><strong>Harga:</strong> Rp 95.000</p>
+      <p><strong>Stok:</strong> 11 tersedia</p>
+
+      <div style="margin-top: 24px; margin-bottom: 16px;">
+        <h4 style="font-size: 20px; color: var(--navy); margin-bottom: 12px;">Deskripsi Buku</h4>
+        <p style="line-height: 1.8; color: var(--text-light);">
+          Buku ini memberikan panduan lengkap tentang pengembangan web modern menggunakan JavaScript. 
+          Dari konsep dasar hingga teknik lanjutan, pembaca akan mempelajari cara membuat aplikasi web 
+          yang interaktif dan responsif. Materi mencakup HTML5, CSS3, JavaScript ES6+, framework populer, 
+          dan best practices dalam pengembangan web profesional.
+        </p>
+        <p style="line-height: 1.8; color: var(--text-light); margin-top: 12px;">
+          Dengan pendekatan praktis dan contoh kode yang jelas, buku ini cocok untuk pemula maupun 
+          developer yang ingin meningkatkan skill mereka dalam pemrograman web.
+        </p>
+      </div>
+
+      <div>
+        <button class="btn">Tambahkan ke Koleksi</button>
+        <button class="btn btn-secondary">Baca Buku</button>
+        <button class="btn btn-secondary">Pinjam Buku</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rekomendasi Buku Serupa -->
+  <section class="section" style="margin-top: 64px;">
+    <div class="section-header">
+      <h2 class="section-title">Buku Serupa</h2>
+    </div>
+
+    <div class="grid">
+      <a href="detail.html" class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h3 class="card-title">Buku Teknologi 1</h3>
+          <p class="card-author">Penulis A</p>
+          <p class="card-year">2020</p>
+        </div>
+      </a>
+      
+      <a href="detail.html" class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h3 class="card-title">Buku Teknologi 2</h3>
+          <p class="card-author">Penulis B</p>
+          <p class="card-year">2021</p>
+        </div>
+      </a>
+      
+      <a href="detail.html" class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h3 class="card-title">Buku Teknologi 3</h3>
+          <p class="card-author">Penulis C</p>
+          <p class="card-year">2022</p>
+        </div>
+      </a>
+      
+      <a href="detail.html" class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h3 class="card-title">Buku Teknologi 4</h3>
+          <p class="card-author">Penulis D</p>
+          <p class="card-year">2019</p>
+        </div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <div class="logo">G</div>
+        <span>GROCG LIBRARY</span>
+      </div>
+      <p>Platform perpustakaan digital terbaik untuk Anda</p>
+    </div>
+    
+    <div class="footer-center">
+      <h4>Menu</h4>
+      <a href="index.html">Beranda</a>
+      <a href="kategori.html">Kategori</a>
+      <a href="profil.html">Profil</a>
+    </div>
+    
+    <div class="footer-right">
+      <h4>Ikuti Kami</h4>
+      <div class="socials">
+        <div class="social">Y</div>
+        <div class="social">I</div>
+        <div class="social">F</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2024 GROCG Library. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const closeBtn = document.getElementById('closeBtn');
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebarOverlay');
+
+  menuBtn.addEventListener('click', () => {
+    sidebar.classList.add('open');
+    overlay.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('active');
+  });
+
+  overlay.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>

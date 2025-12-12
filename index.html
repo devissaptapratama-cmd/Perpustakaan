@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Beranda - GROCG Library</title>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-left">
+      <div class="logo">G</div>
+      <span class="site-title">GROCG LIBRARY</span>
+    </div>
+
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link active">Beranda</a>
+      <a href="kategori.html" class="nav-link">Kategori</a>
+      <a href="profil.html" class="nav-link">Profil</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="login.html" class="btn-login">Login</a>
+      <button class="btn-menu" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+      <button class="close-btn" id="closeBtn">&times;</button>
+    </div>
+    <a href="index.html">Beranda</a>
+    <a href="kategori.html">Kategori</a>
+    <a href="profil.html">Profil</a>
+    <a href="login.html">Login</a>
+  </nav>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</header>
+
+<main class="container">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Selamat Datang di GROCG Library</h1>
+      <p>Temukan ribuan koleksi buku terbaik untuk menambah wawasan Anda</p>
+      <div class="search-box">
+        <input type="text" placeholder="Cari judul buku, penulis, atau kategori...">
+        <button class="btn-search">Cari</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Koleksi Populer</h2>
+      <a href="kategori.html" class="view-all">Lihat Semua →</a>
+    </div>
+
+    <div class="grid">
+      <a href="detail.html" class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h3 class="card-title">Buku Satu</h3>
+          <p class="card-author">Penulis A</p>
+          <p class="card-year">2020</p>
+        </div>
+      </a>
+      
+      <a href="detail.html" class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h3 class="card-title">Buku Dua</h3>
+          <p class="card-author">Penulis B</p>
+          <p class="card-year">2021</p>
+        </div>
+      </a>
+      
+      <a href="detail.html" class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h3 class="card-title">Buku Tiga</h3>
+          <p class="card-author">Penulis C</p>
+          <p class="card-year">2022</p>
+        </div>
+      </a>
+      
+      <a href="detail.html" class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h3 class="card-title">Buku Empat</h3>
+          <p class="card-author">Penulis D</p>
+          <p class="card-year">2019</p>
+        </div>
+      </a>
+      
+      <a href="detail.html" class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h3 class="card-title">Buku Lima</h3>
+          <p class="card-author">Penulis E</p>
+          <p class="card-year">2024</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Book List Section -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Daftar Buku Terbaru</h2>
+    </div>
+
+    <div class="table-wrap">
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>Judul</th>
+            <th>Penulis</th>
+            <th>Tahun</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Buku Satu</td>
+            <td>Penulis A</td>
+            <td>2020</td>
+            <td><a href="detail.html" class="btn-detail">Detail</a></td>
+          </tr>
+          <tr>
+            <td>Buku Dua</td>
+            <td>Penulis B</td>
+            <td>2021</td>
+            <td><a href="detail.html" class="btn-detail">Detail</a></td>
+          </tr>
+          <tr>
+            <td>Buku Tiga</td>
+            <td>Penulis C</td>
+            <td>2022</td>
+            <td><a href="detail.html" class="btn-detail">Detail</a></td>
+          </tr>
+          <tr>
+            <td>Buku Empat</td>
+            <td>Penulis D</td>
+            <td>2019</td>
+            <td><a href="detail.html" class="btn-detail">Detail</a></td>
+          </tr>
+          <tr>
+            <td>Buku Lima</td>
+            <td>Penulis E</td>
+            <td>2024</td>
+            <td><a href="detail.html" class="btn-detail">Detail</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>Judul</th>
+            <th>Penulis</th>
+            <th>Tahun</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Buku Enam</td>
+            <td>Penulis F</td>
+            <td>2023</td>
+            <td><a href="detail.html" class="btn-detail">Detail</a></td>
+          </tr>
+          <tr>
+            <td>Buku Tujuh</td>
+            <td>Penulis G</td>
+            <td>2021</td>
+            <td><a href="detail.html" class="btn-detail">Detail</a></td>
+          </tr>
+          <tr>
+            <td>Buku Delapan</td>
+            <td>Penulis H</td>
+            <td>2020</td>
+            <td><a href="detail.html" class="btn-detail">Detail</a></td>
+          </tr>
+          <tr>
+            <td>Buku Sembilan</td>
+            <td>Penulis I</td>
+            <td>2023</td>
+            <td><a href="detail.html" class="btn-detail">Detail</a></td>
+          </tr>
+          <tr>
+            <td>Buku Sepuluh</td>
+            <td>Penulis J</td>
+            <td>2022</td>
+            <td><a href="detail.html" class="btn-detail">Detail</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <div class="logo">G</div>
+        <span>GROCG LIBRARY</span>
+      </div>
+      <p>Platform perpustakaan digital terbaik untuk Anda</p>
+    </div>
+    
+    <div class="footer-center">
+      <h4>Menu</h4>
+      <a href="index.html">Beranda</a>
+      <a href="kategori.html">Kategori</a>
+      <a href="profil.html">Profil</a>
+    </div>
+    
+    <div class="footer-right">
+      <h4>Ikuti Kami</h4>
+      <div class="socials">
+        <div class="social">Y</div>
+        <div class="social">I</div>
+        <div class="social">F</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2024 GROCG Library. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const closeBtn = document.getElementById('closeBtn');
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebarOverlay');
+
+  menuBtn.addEventListener('click', () => {
+    sidebar.classList.add('open');
+    overlay.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('active');
+  });
+
+  overlay.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>

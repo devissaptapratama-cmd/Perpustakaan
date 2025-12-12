@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Beranda - GROCG Library</title>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-left">
+      <div class="logo">G</div>
+      <span class="site-title">GROCG LIBRARY</span>
+    </div>
+
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link active">Beranda</a>
+      <a href="kategori.html" class="nav-link">Kategori</a>
+      <a href="profil.html" class="nav-link">Profil</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="login.html" class="btn-login">Login</a>
+      <button class="btn-menu" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+      <button class="close-btn" id="closeBtn">&times;</button>
+    </div>
+    <a href="index.html">Beranda</a>
+    <a href="kategori.html">Kategori</a>
+    <a href="profil.html">Profil</a>
+    <a href="login.html">Login</a>
+  </nav>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</header>
+
+<main class="container profile">
+
+  <h2>Profil</h2>
+
+  <div class="form-row"><label>Email</label><input class="input" value="xxxx"></div>
+  <div class="form-row"><label>Nama</label><input class="input" value="xxxx"></div>
+  <div class="form-row"><label>Password</label><input class="input" value="xxxxx"></div>
+  <div class="form-row"><label>NIM</label><input class="input" value="xxxx"></div>
+  <div class="form-row"><label>Alamat</label><input class="input" value="xxxx"></div>
+  <div class="form-row"><label>No HP</label><input class="input" value="xxxx"></div>
+
+  <div style="margin-top:20px;">
+    <span class="collection-title">Koleksi</span>
+    <div class="grid" style="grid-template-columns: repeat(4,1fr); margin-top:14px;">
+      <div class="card"></div><div class="card"></div>
+      <div class="card"></div><div class="card"></div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="socials">
+    <div class="social">Y</div>
+    <div class="social">I</div>
+    <div class="social">F</div>
+  </div>
+  Thanks
+</footer>
+
+<script>
+  document.getElementById('menuToggle').onclick = ()=>{
+    document.getElementById('sidebar').classList.toggle('show');
+  };
+</script>
+</body>
+</html>

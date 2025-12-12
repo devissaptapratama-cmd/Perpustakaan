@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="kategori.css">
+  <title>Kategori - GROCG Library</title>
+</head>
+<body>
+<body>
+
+<header class="site-header">
+  <div class="header-container">
+    <div class="header-left">
+      <div class="logo">G</div>
+      <span class="site-title">GROCG LIBRARY</span>
+    </div>
+
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link">Beranda</a>
+      <a href="kategori.html" class="nav-link active">Kategori</a>
+      <a href="profil.html" class="nav-link">Profil</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="login.html" class="btn-login">Login</a>
+      <button class="btn-menu" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Kategori Fiksi -->
+  <section class="category-section">
+    <div class="category-header">
+      <div class="category-icon">📚</div>
+      <h2 class="category-title">Fiksi</h2>
+      <span class="category-count">25 Buku</span>
+    </div>
+
+    <div class="subcategory-tabs">
+      <button class="tab-btn active">Semua</button>
+      <button class="tab-btn">Novel</button>
+      <button class="tab-btn">Fantasi</button>
+      <button class="tab-btn">Misteri</button>
+      <button class="tab-btn">Romance</button>
+      <button class="tab-btn">Sci-Fi</button>
+    </div>
+
+    <div class="grid">
+      <a href="detail.html">
+        <div class="card">
+          <div class="card-image">
+            <span class="card-badge">Baru</span>
+          </div>
+          <div class="card-content">
+            <div class="card-title">Laskar Pelangi</div>
+            <div class="card-author">Andrea Hirata</div>
+            <div class="card-meta">
+              <span class="card-year">2005</span>
+              <span class="card-status">Tersedia</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <div class="card-title">Bumi Manusia</div>
+          <div class="card-author">Pramoedya Ananta Toer</div>
+          <div class="card-meta">
+            <span class="card-year">1980</span>
+            <span class="card-status">Tersedia</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <div class="card-title">Hujan</div>
+          <div class="card-author">Tere Liye</div>
+          <div class="card-meta">
+            <span class="card-year">2016</span>
+            <span class="card-status unavailable">Dipinjam</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <div class="card-title">Perahu Kertas</div>
+          <div class="card-author">Dee Lestari</div>
+          <div class="card-meta">
+            <span class="card-year">2009</span>
+            <span class="card-status">Tersedia</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <div class="card-title">Cantik Itu Luka</div>
+          <div class="card-author">Eka Kurniawan</div>
+          <div class="card-meta">
+            <span class="card-year">2002</span>
+            <span class="card-status">Tersedia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabel Fiksi -->
+    <div class="table-container">
+      <div class="table-header">
+        <h3>Daftar Lengkap Buku Fiksi</h3>
+        <div class="view-toggle">
+          <button class="toggle-btn active">Tabel</button>
+          <button class="toggle-btn">Grid</button>
+        </div>
+      </div>
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Judul Buku</th>
+            <th>Penulis</th>
+            <th>Tahun</th>
+            <th>Kategori</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Laskar Pelangi</td>
+            <td>Andrea Hirata</td>
+            <td>2005</td>
+            <td>Novel</td>
+            <td><span class="table-badge badge-tersedia">Tersedia</span></td>
+            <td><button class="btn-detail">Detail</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Bumi Manusia</td>
+            <td>Pramoedya Ananta Toer</td>
+            <td>1980</td>
+            <td>Novel</td>
+            <td><span class="table-badge badge-tersedia">Tersedia</span></td>
+            <td><button class="btn-detail">Detail</button></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Hujan</td>
+            <td>Tere Liye</td>
+            <td>2016</td>
+            <td>Fantasi</td>
+            <td><span class="table-badge badge-dipinjam">Dipinjam</span></td>
+            <td><button class="btn-detail">Detail</button></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Perahu Kertas</td>
+            <td>Dee Lestari</td>
+            <td>2009</td>
+            <td>Romance</td>
+            <td><span class="table-badge badge-tersedia">Tersedia</span></td>
+            <td><button class="btn-detail">Detail</button></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Cantik Itu Luka</td>
+            <td>Eka Kurniawan</td>
+            <td>2002</td>
+            <td>Novel</td>
+            <td><span class="table-badge badge-tersedia">Tersedia</span></td>
+            <td><button class="btn-detail">Detail</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Kategori Non-Fiksi -->
+  <section class="category-section">
+    <div class="category-header">
+      <div class="category-icon">📖</div>
+      <h2 class="category-title">Non-Fiksi</h2>
+      <span class="category-count">18 Buku</span>
+    </div>
+
+    <div class="subcategory-tabs">
+      <button class="tab-btn active">Semua</button>
+      <button class="tab-btn">Biografi</button>
+      <button class="tab-btn">Sejarah</button>
+      <button class="tab-btn">Sains</button>
+      <button class="tab-btn">Teknologi</button>
+      <button class="tab-btn">Bisnis</button>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-image">
+          <span class="card-badge">Populer</span>
+        </div>
+        <div class="card-content">
+          <div class="card-title">Sapiens</div>
+          <div class="card-author">Yuval Noah Harari</div>
+          <div class="card-meta">
+            <span class="card-year">2014</span>
+            <span class="card-status">Tersedia</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <div class="card-title">Atomic Habits</div>
+          <div class="card-author">James Clear</div>
+          <div class="card-meta">
+            <span class="card-year">2018</span>
+            <span class="card-status unavailable">Dipinjam</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <div class="card-title">Filosofi Teras</div>
+          <div class="card-author">Henry Manampiring</div>
+          <div class="card-meta">
+            <span class="card-year">2018</span>
+            <span class="card-status">Tersedia</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <div class="card-title">The Lean Startup</div>
+          <div class="card-author">Eric Ries</div>
+          <div class="card-meta">
+            <span class="card-year">2011</span>
+            <span class="card-status">Tersedia</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <div class="card-title">Sejarah Dunia</div>
+          <div class="card-author">JM Roberts</div>
+          <div class="card-meta">
+            <span class="card-year">1976</span>
+            <span class="card-status">Tersedia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabel Non-Fiksi -->
+    <div class="table-container">
+      <div class="table-header">
+        <h3>Daftar Lengkap Buku Non-Fiksi</h3>
+        <div class="view-toggle">
+          <button class="toggle-btn active">Tabel</button>
+          <button class="toggle-btn">Grid</button>
+        </div>
+      </div>
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Judul Buku</th>
+            <th>Penulis</th>
+            <th>Tahun</th>
+            <th>Kategori</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sapiens</td>
+            <td>Yuval Noah Harari</td>
+            <td>2014</td>
+            <td>Sejarah</td>
+            <td><span class="table-badge badge-tersedia">Tersedia</span></td>
+            <td><button class="btn-detail">Detail</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Atomic Habits</td>
+            <td>James Clear</td>
+            <td>2018</td>
+            <td>Self-Help</td>
+            <td><span class="table-badge badge-dipinjam">Dipinjam</span></td>
+            <td><button class="btn-detail">Detail</button></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Filosofi Teras</td>
+            <td>Henry Manampiring</td>
+            <td>2018</td>
+            <td>Filosofi</td>
+            <td><span class="table-badge badge-tersedia">Tersedia</span></td>
+            <td><button class="btn-detail">Detail</button></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>The Lean Startup</td>
+            <td>Eric Ries</td>
+            <td>2011</td>
+            <td>Bisnis</td>
+            <td><span class="table-badge badge-tersedia">Tersedia</span></td>
+            <td><button class="btn-detail">Detail</button></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Sejarah Dunia</td>
+            <td>JM Roberts</td>
+            <td>1976</td>
+            <td>Sejarah</td>
+            <td><span class="table-badge badge-tidak">Rusak</span></td>
+            <td><button class="btn-detail">Detail</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="socials">
+    <div class="social">Y</div>
+    <div class="social">I</div>
+    <div class="social">F</div>
+  </div>
+  <p>© 2024 GROCG Library. Thanks for visiting!</p>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  if (menuBtn) {
+    menuBtn.onclick = () => {
+      alert('Menu sidebar belum diimplementasikan');
+    };
+  }
+
+  // Tab buttons functionality
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      this.parentElement.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // Toggle view buttons
+  const toggleBtns = document.querySelectorAll('.toggle-btn');
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      this.parentElement.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
